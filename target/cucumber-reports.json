@@ -1,0 +1,248 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Busco algo en google",
+        "description": "",
+        "id": "probar-la-búsqueda-en-google;busco-algo-en-google;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6826830500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on the Google search page",
+            "match": {
+              "location": "GoogleSteps.navigateToGoogle()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 149622100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I search Perritos",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Perritos",
+                  "offset": 9
+                }
+              ],
+              "location": "GoogleSteps.enterSearchCriteria(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 278914800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "click on the seach button",
+            "match": {
+              "location": "GoogleSteps.clickSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4502601100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the results match the criteria Perritos",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Perritos",
+                  "offset": 31
+                }
+              ],
+              "location": "GoogleSteps.validateResults(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Busco algo en google",
+        "description": "",
+        "id": "probar-la-búsqueda-en-google;busco-algo-en-google;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 765976300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on the Google search page",
+            "match": {
+              "location": "GoogleSteps.navigateToGoogle()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 109987000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I search Gatitos",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Gatitos",
+                  "offset": 9
+                }
+              ],
+              "location": "GoogleSteps.enterSearchCriteria(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 240293500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "click on the seach button",
+            "match": {
+              "location": "GoogleSteps.clickSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2734265100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the results match the criteria Gatitos",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Gatitos",
+                  "offset": 31
+                }
+              ],
+              "location": "GoogleSteps.validateResults(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Busco algo en google",
+        "description": "",
+        "id": "probar-la-búsqueda-en-google;busco-algo-en-google;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1046401700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on the Google search page",
+            "match": {
+              "location": "GoogleSteps.navigateToGoogle()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 127093900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I search Ktronix Ofertas",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ktronix Ofertas",
+                  "offset": 9
+                }
+              ],
+              "location": "GoogleSteps.enterSearchCriteria(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 231596500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "click on the seach button",
+            "match": {
+              "location": "GoogleSteps.clickSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //body[1]/div[7]/div[1]/div[13]/div[1]/div[2]/div[2]/div[1]/div[1] (tried for 20 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.9.1\u0027, revision: \u0027eb2032df7f\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002718.0.2.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\\Users\\Usuario\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:11661}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:11661/devtoo..., se:cdpVersion: 115.0.5790.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 255fdcbcbef8e1c1d432ab1c5ffd26ee\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\r\n\tat pages.BasePage.find(BasePage.java:43)\r\n\tat pages.BasePage.getSubElemetsByClassName(BasePage.java:112)\r\n\tat steps.GoogleSteps.validateResults(GoogleSteps.java:35)\r\n\tat ✽.the results match the criteria Ofertas(src/test/resources/features/Google.feature:10)\r\n",
+              "duration": 20504690100,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "the results match the criteria Ofertas",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ofertas",
+                  "offset": 31
+                }
+              ],
+              "location": "GoogleSteps.validateResults(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          }
+        ]
+      }
+    ],
+    "name": "Probar la búsqueda en google",
+    "description": "",
+    "id": "probar-la-búsqueda-en-google",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/Google.feature",
+    "tags": [
+      {
+        "name": "@Test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
